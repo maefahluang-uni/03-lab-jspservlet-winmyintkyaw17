@@ -1,10 +1,26 @@
 <html>
+    <head>
+        <style>
+            input[type="submit"] {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        </style>
+    </head>
 <body>
 <h2>BMI Calculator</h2>
 <form action="/calbmi" method="POST">
+    <label for="weight">Enter your weight:</label>
     <input type="text" name="weight" placeholder="Weight in kg" required><br>
+
+    <label for="height">Enter your height:</label>
     <input type="text" name="height" placeholder="Height in metre" required><br>
-    <input type="submit" value="Calculate">
+
+    <input  type="submit" value="Calculate">
+
 </form>
 </body>
 </html>
